@@ -14,46 +14,107 @@
     --NEUTRAL-400: #555559;
     --NEUTRAL-500: #2A2B2F;
     --black-black: #000000;
-    --Regular-400: 400;
-    --Medium-500: 500;
-    --Bold-700: 700;
-    --Black-900: 900;
+}
+
+@font-face {
+    src: url("../assets/Fonts/Vazir-Variable.woff2");
+    font-family: Vazirmatn;
 }
 
 h1 {
     font-size: 2rem;
     line-height: 149%;
-    font-weight: var(--Black-900);
+    font-weight: 900;
 }
 
 h2 {
     font-size: 1.75rem;
     line-height: 166%;
-    font-weight: var(--Bold-700);
+    font-weight: 700;
 }
 
 h3 {
     font-size: 1.125rem;
     line-height: 175%;
-    font-weight: var(--Bold-700);
+    font-weight: 700;
 }
 
-@media (min-width: 360px) {
+.--subtitle {
+    font-size: 1rem;
+    line-height: 154%;
+    font-weight: 500;
+}
+
+.--body {
+    font-size: 0.875rem;
+    line-height: 169%;
+    font-weight: 400;
+}
+
+.--button {
+    font-size: 0.875rem;
+    line-height: 149%;
+    font-weight: 700;
+}
+
+.--caption {
+    font-size: 0.75rem;
+    line-height: 168%;
+    font-weight: 500;
+}
+
+.--overline {
+    font-size: 0.625rem;
+    line-height: 164%;
+    font-weight: 500;
+}
+
+@media (min-width: 1440px) {
     h1 {
         font-size: 2.5rem;
         line-height: 140%;
-        font-weight: var(--Black-900);
+        font-weight: 900;
     }
 
     h2 {
         font-size: 1.75rem;
         line-height: 144%;
-        font-weight: var(--Bold-700);
+        font-weight: 700;
     }
 
     h3 {
         font-size: 1.25rem;
         line-height: 159%;
-        font-weight: var(--Bold-700);
+        font-weight: 700;
+    }
+
+    .--subtitle {
+        font-size: 1.125rem;
+        line-height: 154%;
+        font-weight: 500;
+    }
+
+    .--body {
+        font-size: 1rem;
+        line-height: 149%;
+        font-weight: 400;
+    }
+
+    .--button {
+        font-size: 1rem;
+        line-height: 149%;
+        font-weight: 700;
+    }
+
+    .--caption {
+        font-size: 0.875rem;
+        line-height: 168%;
+        font-weight: 500;
+    }
+
+    .--overline {
+        font-size: 0.75rem;
+        line-height: 168%;
+        font-weight: 500;
     }
 }
