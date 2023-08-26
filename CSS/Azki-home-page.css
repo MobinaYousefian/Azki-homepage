@@ -39,14 +39,16 @@ header{
 main {
     width: 100%;
     height: auto;
-    padding: 40px 16px 0 16px;
+    text-align: center;
+    padding-top: 40px;
     background: linear-gradient(45deg, #e2f0fd, #ffffff);
 }
+
+main > div {padding: 0 16px}
 
 .hero__container{
     width: 100%;
     height: auto;
-    text-align: center;
 }
 
 .hero__title{
@@ -63,7 +65,7 @@ main {
 
 .card__top {
     width: 100%;
-    padding: 44px 0 24px 0;
+    padding: 44px 16px 24px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +117,8 @@ main {
 }
 
 hr {
+    width: 90%;
+    margin: 0 auto;
     height: 1px;
     background-color: var(--Primary-Light);
     border: none;
@@ -156,11 +160,17 @@ hr {
 
 .buildings{
     width: 100%;
-    height: auto;
-    margin-top: 32px;
     display: flex;
-    justify-content: center;
+    margin-top: 32px;
 }
 
-.buildings img {
+.car-bicycle {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.car-bicycle img {
+    display: block;
+    width: 100%;
+    margin: 6% auto 0 auto;
 }
