@@ -7,12 +7,12 @@
     font-family: Vazirmatn, sans-serif;
 }
 
-.container{
+.container {
     width: 100%;
     height: auto;
 }
 
-header{
+header {
     width: 100%;
     height: auto;
     display: flex;
@@ -22,9 +22,7 @@ header{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.header__login {
-    color: var(--Primary-Main);
-}
+.header__login {color: var(--Primary-Main);}
 
 .header__logo {
     width: 76px;
@@ -46,22 +44,16 @@ main {
 
 main > div {padding: 0 16px}
 
-.hero__container{
+.hero__container {
     width: 100%;
     height: auto;
 }
 
-.hero__title{
-    color: var(--NEUTRAL-400);
-}
+.hero__title {color: var(--NEUTRAL-400);}
 
-.hero__info {
-    padding-top: 24px;
-}
+.hero__info {padding-top: 24px;}
 
-.hero__description {
-    padding-top: 8px;
-}
+.hero__description {padding-top: 8px;}
 
 .card__top {
     width: 100%;
@@ -78,7 +70,7 @@ main > div {padding: 0 16px}
     padding: 4px;
 }
 
-.card__cars{
+.card__cars {
     width: 100%;
     padding: 18px 0;
     text-align: center;
@@ -112,9 +104,7 @@ main > div {padding: 0 16px}
     z-index: 100;
 }
 
-.--last-card {
-    margin: 0 auto;
-}
+.--last-card {margin: 0 auto;}
 
 hr {
     width: 90%;
@@ -149,16 +139,14 @@ hr {
     padding: 12px 16px;
 }
 
-.card__man p {
-    color: var(--NEUTRAL-400);
-}
+.card__man p {color: var(--NEUTRAL-400);}
 
 .card__man img {
     width: 40px;
     height: 40px;
 }
 
-.buildings{
+.buildings {
     width: 100%;
     display: flex;
     margin-top: 32px;
@@ -173,4 +161,203 @@ hr {
     display: block;
     width: 100%;
     margin: 6% auto 0 auto;
+}
+
+.payment {
+    width: 100%;
+    height: auto;
+    background-color: var(--NEUTRAL-25);
+    padding: 40px 16px 0 16px;
+    margin-top: 136px;
+}
+
+.payment__text h2 {
+    text-align: center;
+    color: var(--NEUTRAL-500);
+}
+
+.payment__text p {
+    margin-top: 16px;
+    text-align: right;
+    color: var(--NEUTRAL-300);
+}
+
+.payment__guide {
+    margin-top: 16px;
+    width: 100%;
+    padding: 0 49px;
+}
+
+.payment__step {
+    background-color: var(--white-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    padding: 6px 64px;
+    text-align: center;
+}
+
+.payment__step p {color: var(--black-black);}
+
+.payment__step h3 {
+    color: var(--secondary-Main);
+    padding-left: 16px;
+}
+
+.btn {
+    background-color: var(--Primary-Main);
+    color: var(--white-white);
+    margin: 32px auto 0 auto;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__text {color: var(--white-white);}
+
+.car-crash {
+    width: 100%;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.car-crash img {
+    width: 100%;
+    display: flex;
+}
+
+.calender__container {
+    width: 100%;
+    padding: 0 16px;
+    margin: 96px 0 80px 0;
+}
+
+.calender {
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid var(--black-black);
+}
+
+.calender__head {
+    width: 100%;
+    background-color: var(--secondary-Main);
+    text-align: center;
+    border-radius: 23px 23px 0 0;
+    padding: 64px 20px 24px 20px;
+    position: relative;
+}
+
+.circle-left {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.circle-right {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.coil-left {
+    position: absolute;
+    left: 16px;
+    top: -12px;
+}
+
+.--left {left: 44px;}
+
+.coil-right {
+    position: absolute;
+    right: 20px;
+    top: -12px;
+}
+
+.--right {right: 48px}
+
+.calender__body {
+    width: 100%;
+    padding: 24px 8px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input__container {
+    padding: 6px;
+    width: 50%;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid var(--NEUTRAL-100);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: var(--NEUTRAL-300);
+}
+
+.--alignment {justify-content: flex-end;}
+
+.--calender {margin: 40px auto 23px auto;}
+
+.advantages {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__container{padding: 8px;}
+
+.advantages__text {
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--NEUTRAL-200);
+    color: var(--NEUTRAL-500);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__text img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+.advantages__text span {
+    width: 50%;
+    text-align: center;
+}
+
+.chat-float {
+    width: 56px;
+    height: 56px;
+    background-color: var(--Primary-Main);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+}
+
+.chat-float img {
+    width: 26px;
+    height: 26px;
+}
+
+@media (min-width: 1440px) {
+    
 }
