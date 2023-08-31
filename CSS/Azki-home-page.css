@@ -24,12 +24,15 @@ header {
 
 .header__login {color: var(--Primary-Main);}
 
+
 .header__logo {
     width: 76px;
     height: 16px;
 }
 
-.header__menu {
+.header__desktop{display: none}
+
+.header__mobile {
     width: 24px;
     height: 24px;
 }
@@ -57,15 +60,19 @@ main > div {padding: 0 16px}
 
 .card__top {
     width: 100%;
+    max-width: 760px;
     padding: 44px 16px 24px 16px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .cars__container {
     width: 33%;
+    max-width: 132px;
     height: auto;
     padding: 4px;
 }
@@ -78,6 +85,7 @@ main > div {padding: 0 16px}
     border: 1px solid var(--NEUTRAL-50);
     border-radius: 24px;
     position: relative;
+    transition: 0.3s ease-in-out;
 }
 
 .card__cars img {
@@ -104,10 +112,9 @@ main > div {padding: 0 16px}
     z-index: 100;
 }
 
-.--last-card {margin: 0 auto;}
-
 hr {
     width: 90%;
+    max-width: 956px;
     margin: 0 auto;
     height: 1px;
     background-color: var(--Primary-Light);
@@ -115,15 +122,19 @@ hr {
 }
 
 .card__bottom {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 760px;
+    margin: 20px auto 0 auto;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .man__container {
     width: 50%;
+    max-width: 236px;
     padding: 4px;
 }
 
@@ -135,11 +146,19 @@ hr {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 12px 16px;
+    transition: 0.3s ease-in-out;
 }
 
+.--fire{flex-direction: column;}
+
 .card__man p {color: var(--NEUTRAL-400);}
+
+.fire__office{
+    display: none;
+    color: var(--NEUTRAL-200);
+}
 
 .card__man img {
     width: 40px;
@@ -154,21 +173,24 @@ hr {
 
 .car-bicycle {
     width: 100%;
-    padding: 0 5%;
+    max-width: 800px;
+    padding: 0 16px;
+    margin: 20px auto 0 auto;
 }
 
 .car-bicycle img {
     display: block;
     width: 100%;
-    margin: 6% auto 0 auto;
 }
 
 .payment {
     width: 100%;
-    height: auto;
     background-color: var(--NEUTRAL-25);
     padding: 40px 16px 0 16px;
     margin-top: 136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .payment__text h2 {
@@ -216,25 +238,26 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s ease-in-out;
 }
 
 .btn__text {color: var(--white-white);}
 
 .car-crash {
     width: 100%;
+    height: 100%;
     margin-top: 60px;
     padding: 0 20px;
 }
 
 .car-crash img {
     width: 100%;
-    display: flex;
 }
 
 .calender__container {
     width: 100%;
     padding: 0 16px;
-    margin: 96px 0 80px 0;
+    margin: 96px auto 0 auto;
 }
 
 .calender {
@@ -266,24 +289,25 @@ hr {
 
 .coil-left {
     position: absolute;
-    left: 16px;
+    left: 44px;
     top: -12px;
 }
 
-.--left {left: 44px;}
+.--left {left: 16px;}
 
 .coil-right {
     position: absolute;
-    right: 20px;
+    right: 48px;
     top: -12px;
 }
 
-.--right {right: 48px}
+.--right {right: 20px}
 
 .calender__body {
     width: 100%;
     padding: 24px 8px 0 8px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -302,6 +326,7 @@ hr {
     align-items: center;
     padding: 8px;
     color: var(--NEUTRAL-300);
+    transition: 0.2s ease-in-out;
 }
 
 .--alignment {justify-content: flex-end;}
@@ -309,9 +334,11 @@ hr {
 .--calender {margin: 40px auto 23px auto;}
 
 .advantages {
-    width: 100%;
-    margin: 0 auto;
+    width: 320px;
+    margin: 80px auto 0 auto;
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -350,7 +377,8 @@ hr {
     align-items: center;
     position: fixed;
     right: 16px;
-    bottom: 24px;
+    bottom:32px;
+    transition: 0.1s ease-in-out;
 }
 
 .chat-float img {
@@ -358,6 +386,190 @@ hr {
     height: 26px;
 }
 
-@media (min-width: 1440px) {
-    
+.extension-float{display: none}
+
+
+@media (min-width: 1024px) {
+    header {
+        box-shadow: 0 4px 9px rgba(0, 0, 0, 0.16);
+        padding: 16px 144px;
+    }
+
+    .header__login{
+        border: 1px solid var(--Primary-Light);
+        border-radius: 24px;
+        padding: 8px 16px;
+        transition: 0.3s ease-in-out;
+    }
+    .header__login:hover{
+        background-color: rgba(93, 160, 251, 0.05);
+        border: 1px solid var(--Primary-dark);
+    }
+
+    .header__manu{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .header__logo{margin-left: 16px;}
+
+    .header__desktop{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .header__submenu{
+        margin-right: 24px;
+    }
+    .header__submenu:hover{
+        color: var(--Primary-Main);
+    }
+
+    .--align-items{
+        display: flex;
+        align-items: center;
+    }
+
+    .header__mobile {display: none;}
+
+    main {padding-top: 64px;}
+    .hero__info {padding-top: 48px;}
+
+    .cars__container{padding: 12px;}
+
+    .card__top{
+        padding-top: 20px;
+        padding-bottom: 12px
+    }
+
+    .card__cars:hover, .card__man:hover{
+        background-color: rgba(93, 160, 251, 0.05);
+        border: 1px solid var(--Primary-Light);
+    }
+
+    .card__cars p:hover, .card__man p:hover{
+        color: var(--NEUTRAL-500);
+    }
+
+    .card__bottom{margin-top: 12px}
+
+    .man__container{padding: 12px;}
+
+    .fire__office {display: inline;}
+
+    .buildings{margin-top: 24px}
+
+    .car-bicycle{margin-top: 32px}
+
+    .payment{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 144px;
+    }
+
+    .payment__top{
+        width: 40%;
+        padding: 48px 0;
+    }
+
+    .payment__text h2{text-align: right;}
+
+    .payment__guide {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .payment__step {
+        margin: 0;
+        padding: 6px 20px;
+    }
+
+    .btn {margin-top: 40px;}
+
+    .btn:hover {
+        background-color: var(--Primary-dark);
+    }
+
+    .car-crash{
+        margin: 0;
+        padding: 0;
+        width: 520px;
+    }
+
+    .calender__container{
+        max-width: 956px;
+        margin-top: 164px;
+    }
+
+    .calender__head {padding: 30px 0}
+
+    .circle-left{left: 56px}
+    .circle-right{right: 56px}
+
+    .coil-left{left: 86px}
+    .--left{left: 58px}
+
+    .coil-right{right: 88px}
+    .--right{right: 60px}
+
+    .input__container{width: 33%;}
+
+    .input:hover {
+        color: var(--NEUTRAL-500);
+        border: 1px solid var(--NEUTRAL-400);
+    }
+
+    .advantages{
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .advantages__container{padding: 24px}
+
+    .advantages__text {
+        width: 152px;
+        height: 152px;
+        border: 2px solid var(--NEUTRAL-200);
+        padding: 16px;
+    }
+
+    .advantages__text img {
+        height: 56px;
+        width: 56px;
+        margin-bottom: 8px;
+    }
+
+    .advantages__text span{width: 100%;}
+
+    .chat-float{
+        width: 72px;
+        height: 72px;
+        right: 32px;
+        bottom: 64px;
+    }
+
+    .chat-float:hover{
+        background-color: var(--Primary-dark);
+    }
+
+    .chat-float img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .extension-float {
+        width: 72px;
+        height: 72px;
+        display: block;
+        position: fixed;
+        left: 32px;
+        bottom: 64px;
+    }
+
+    .--cursor{cursor: pointer}
 }
